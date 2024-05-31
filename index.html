@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=63311&format=png&color=000000" type="image/x-icon">
+    <title>Pokemon Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <div id="inputbar">
+            <input type="text" id="name">
+            <button id="button" onclick="fetchdata()">Generate</button>
+        </div>
+        <div id="card">
+            <div id="design">
+                <div id="circle1"></div>
+                <div id="circle"></div>
+                <div id="imgdiv">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" id="pokemonimg" alt="Pokemon Image" height="150">
+                </div>
+                <div id="hp">
+                    <div style="font-weight: 700;font-size: 13px;">HP</div>
+                    <div style="font-size: 20px;" id="hpvalue">32</div>
+                </div>
+            </div>
+            <div id="bottom">
+                <div style="display: flex;flex-direction: column; justify-content: space-around; align-items: center;">
+                    <div id="pokemonname">Charmender</div>
+                    <div id="type">FIRE</div>
+                </div>
+                <div id="state">
+                    <div class="state">
+                        <label class="statevalue" id="avalue">23</label>
+                        <label class="text">Attack</label>
+                    </div>
+                    <div class="state">
+                        <label class="statevalue" id="dvalue">65</label>
+                        <label class="text">Defense</label>
+                    </div>
+                    <div class="state">
+                        <label class="statevalue" id="svalue">78</label>
+                        <label class="text">Speed</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{  
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --color: tomato;
+    --v: hidden;
+}
+#body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#inputbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    width: 333px;
+}
+#name{
+    font-size: 18px;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+}
+#button {
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+#button:hover{
+    cursor: pointer;
+}
+#card{
+    visibility: var(--v);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    border: 0px solid black;
+    width: 333px;
+    height: 492px;
+}
+#design{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+#bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    width: 100%;
+    height: 50%;
+}
+#circle1{
+    position: relative;
+    background-color: var(--color);
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 40px;
+    z-index: -100;
+}
+#circle{
+    position: relative;
+    background-color: var(--color);
+    border-radius: 0px 0px 170px 170px;
+    width: 100%;
+    height: 60%;
+    z-index: -100;
+}
+#hp{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60px;
+    padding: 7px;
+    border-radius: 50px;
+}
+#state{
+    display: flex;
+    justify-content: space-evenly;
+}
+.state{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text{
+    margin: 5px;
+    font-size: 13px;
+}
+.statevalue{
+    margin: 5px;
+    font-weight: 700;
+    font-size: 19px;
+}
+#pokemonname{
+    font-size: 28px;
+    font-weight: 700;
+}
+#type{
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--color);
+    text-transform: lowercase;
+    text-align: center;
+    width: 60px;
+    padding: 7px;
+    border-radius: 50px;
+}
+#pokemonimg{
+    width: 100%;
+    position: relative;
+    top: -75px;
+    margin-left: auto;
+    margin-right: auto;
+}
